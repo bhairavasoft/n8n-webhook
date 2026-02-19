@@ -37,9 +37,10 @@ router.post("/aisensy", express.json(), (req, res) => {
         console.log("Incoming Header:", req.headers);
         console.log("------------------------")
         console.log("------------------------")
+        console.log("📩 Incoming Message:", req.body);
+        console.log("------------------------")
+        console.log("------------------------")
         console.log("📩 Incoming Message:", message);
-        console.log("------------------------")
-        console.log("------------------------")
         console.log("------------------------")
         console.log("------------------------")
         console.log("------------------------")
