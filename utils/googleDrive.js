@@ -21,6 +21,7 @@ export const uploadToDrive = async (filePath, fileName) => {
         media: {
             body: fs.createReadStream(filePath),
         },
+        supportsAllDrives: true,
     });
 
     return response.data;
