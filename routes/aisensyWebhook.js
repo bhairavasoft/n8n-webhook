@@ -34,7 +34,7 @@ router.post("/aisensy", express.json(), async (req, res) => {
             const fileName =
                 messageContent?.file_name ||
                 messageContent?.filename ||
-                `file-${Date.now()}`;
+                `${message?.userName || ''}-${message?.phone_number || ''}-${Date.now()}`;
 
             if (!fileUrl) {
                 console.log("❌ No file URL found inside message_content");
